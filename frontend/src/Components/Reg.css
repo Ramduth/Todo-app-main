@@ -1,0 +1,122 @@
+/* Reg.css */
+
+/* Global container styles */
+.todo-register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* 3D perspective for the card */
+  }
+  
+  /* Card styling for the form */
+  .todo-register-form {
+    width: 400px;
+    padding: 30px;
+    background: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Elevated card shadow */
+    transform: rotateY(0); /* Initial rotation */
+    transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .todo-register-container:hover .todo-register-form {
+    transform: rotateY(-10deg); /* Subtle tilt for interactivity */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+  }
+  
+  /* Header styles */
+  .todo-register-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-register-title {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .todo-register-subtitle {
+    font-size: 0.9rem;
+    color: #aaaaaa; /* Subdued subtitle color */
+  }
+  
+  /* Input group styling */
+  .todo-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .todo-input-label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .todo-input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Darker input background */
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .todo-input-field:focus {
+    outline: none;
+    border-color: #ff9800; /* Orange border on focus */
+    box-shadow: 0 0 5px #ff9800; /* Glowing border effect */
+  }
+  
+  /* Button styling */
+  .todo-register-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .todo-register-button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05); /* Button enlarges slightly on hover */
+  }
+  
+  .todo-register-button:disabled {
+    background-color: #555; /* Disabled button styling */
+    cursor: not-allowed;
+  }
+  
+  /* Error message styling */
+  .todo-error-message {
+    color: #ff4d4d; /* Bright red for error messages */
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Auth link styling */
+  .todo-auth-links {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .todo-auth-link {
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .todo-auth-link:hover {
+    color: #e68a00;
+    text-decoration: underline; /* Emphasizes hover state */
+  }
+  

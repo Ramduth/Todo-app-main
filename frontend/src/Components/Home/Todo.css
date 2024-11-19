@@ -1,0 +1,195 @@
+/* Todo.css */
+.Global {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  background-image: url(../../assets/todo.webp`);
+  color: #fff;
+}
+
+.Global {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.todo-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.todo-input-item {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+.primaryBtn {
+  padding: 10px 20px;
+  background-color: #555;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primaryBtn:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background-color: #777;
+}
+
+.footer {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.btn-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.secondaryBtn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secondaryBtn.active {
+  background-color: #555;
+}
+
+.secondaryBtn:hover {
+  background-color: #777;
+}
+
+.todo-list {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444;
+}
+
+th {
+  font-weight: bold;
+}
+
+.todo-list-item {
+  padding: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.icon:hover {
+  color: #f00;
+}
+
+.check-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.check-icon:hover {
+  color: #0f0;
+}
+
+.check-icon2 {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.check-icon2:hover {
+  color: #00f;
+}
+
+.logout-button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .todo-wrapper {
+    padding: 15px;
+  }
+
+  .primaryBtn,
+  .secondaryBtn,
+  .logout-button {
+    font-size: 0.9rem;
+  }
+}
